@@ -69,7 +69,7 @@ function App() {
                     <div className="columnA">
                         <h2>Sobre</h2>
                         <p>
-                            Me chamo Alexandre Lara, formado em Analise
+                            Me chamo Alexandre Lara, sou formado em Analise e
                             Desenvolvimento de Sistemas na Fatec Santos,
                             desenvolvedor web e apaixonado em tudo em que a arte
                             de criar serviços Web proporciona.
@@ -85,6 +85,7 @@ function App() {
                         <div className="contacts">
                             <div className="socialLink">
                                 <img
+                                    id="emailLogo"
                                     className="imageContact"
                                     src={emailLogo}
                                     alt="Imagem simbolizando email"
