@@ -10,19 +10,23 @@ import callMe from "./assets/callMe.png";
 
 import { BurgerSpin as Burger } from "react-burger-icons";
 import { useState } from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contacts from "./components/Contacts";
 
 function App() {
-    const [isClosed, setIsClosed] = useState(false);
+    // const [isClosed, setIsClosed] = useState(false);
 
-    const toggleClosed = () => {
-        setIsClosed(!isClosed);
-        // const burgerOpen = isClosed ? "true" : "false"
-    };
-    const stringIsClosed = isClosed.toString();
+    // const toggleClosed = () => {
+    //     setIsClosed(!isClosed);
+    //     // const burgerOpen = isClosed ? "true" : "false"
+    // };
+    // const stringIsClosed = isClosed.toString();
 
     return (
         <>
-            <header className="header">
+            {/* <header className="header">
                 <a href={"#home"}>
                     <img className="logo" src={logo} alt="" />
                 </a>
@@ -33,7 +37,6 @@ function App() {
                 >
                     <Burger isClosed={isClosed} />
                 </button>
-                {/* <nav className={stringIsClosed}> */}
                 <ul id="navbar" className={stringIsClosed}>
                     <a href={"#home"}>
                         <li onClick={toggleClosed}>Início</li>
@@ -48,11 +51,11 @@ function App() {
                         <li onClick={toggleClosed}>Contato</li>
                     </a>
                 </ul>
-                {/* </nav> */}
-            </header>
+            </header> */}
+            <Header />
             <img className="blob" src={blob} alt="" />
             <div className="pageContent">
-                <section id="home">
+                {/* <section id="home">
                     <div className="columnA">
                         <h3>Desenvolvedor</h3>
                         <h1>Alexandre Lara</h1>
@@ -64,8 +67,9 @@ function App() {
                     <div className="columnB">
                         <img src={memoji} alt="" />
                     </div>
-                </section>
-                <section id="about">
+                </section> */}
+                <Home />
+                {/* <section id="about">
                     <div className="columnA">
                         <h2>Sobre</h2>
                         <p>
@@ -78,8 +82,9 @@ function App() {
                     <div className="columnB">
                         <img src={alexandreLara} alt="" />
                     </div>
-                </section>
-                <section id="contact">
+                </section> */}
+                <About />
+                {/* <section id="contact">
                     <div className="columnA">
                         <h2>Contato</h2>
                         <div className="contacts">
@@ -157,7 +162,8 @@ function App() {
                             alt="Caricatura de Alexandre criada através do Memoji do sistema iOs"
                         />
                     </div>
-                </section>
+                </section> */}
+                <Contacts />
             </div>
         </>
     );
