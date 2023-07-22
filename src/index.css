@@ -215,7 +215,7 @@ header {
     }
 
     #about .columnB {
-        padding-bottom: 50rem;
+        padding-bottom: 40rem;
         /* padding-left: 50%; */
     }
 
@@ -227,13 +227,117 @@ header {
     }
 
     /* =================
+    projetos
+    ================= */
+
+    #projects {
+        /* border: 2px solid red; */
+        /* margin-top: 10rem; */
+        position: relative;
+        padding-top: 5rem;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        width: 80%;
+        bottom: 10rem;
+    }
+
+    #projects .columnA {
+        text-align: left;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    #projects .sliderStyles {
+        height: 100%;
+        position: relative;
+    }
+
+    #projects .card {
+        border: 2px solid #2c2c2c;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 35rem;
+        border-radius: 8px;
+        background-color: var(--card-color);
+    }
+
+    #projects .cardImage {
+        width: 95%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        border: 2px solid #2c2c2c;
+    }
+
+    #projects .card :nth-child(2) {
+        /* border: 2px solid red; */
+        align-items: left;
+    }
+    #projects .pagesURL {
+        /* border: 2px solid red; */
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    #projects .githubImage {
+        aspect-ratio: auto;
+        width: 5rem;
+    }
+    #projects .websiteImage {
+        aspect-ratio: auto;
+        width: 5.5rem;
+    }
+
+    /* #projects .slideStyles {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-image: url(${slides[currentIndex].url});
+    } */
+
+    /* #projects .leftArrowStyles {
+        position: "absolute";
+        top: "50%";
+        transform: "translate(0, -50%)";
+        left: "32px";
+        font-size: "45px";
+        color: "#fff";
+        z-index: 1;
+        cursor: "pointer";
+    }
+
+    #projects .rightArrowStyles {
+        position: "absolute";
+        top: "50%";
+        transform: "translate(0, -50%)";
+        right: "32px";
+        font-size: "45px";
+        color: "#fff";
+        z-index: 1;
+        cursor: "pointer";
+    } */
+
+    /* #projects .columnB {
+        padding-bottom: ;
+    } */
+
+    /* =================
     contatos 
     ================= */
 
     #contact {
         position: absolute;
         top: 30rem;
-        margin-top: 180rem;
+        margin-top: 250rem;
         display: flex;
         flex-direction: column;
         gap: 15rem;
@@ -246,6 +350,10 @@ header {
         flex-direction: column;
         align-items: flex-start;
         z-index: 11;
+    }
+
+    #contact h2 {
+        padding-bottom: 10rem;
     }
 
     #contact .contacts {
@@ -292,5 +400,7 @@ header {
         aspect-ratio: auto;
         width: 100%;
         margin-bottom: -5rem;
+        /* padding-bottom: -2rem; */
+        /* border-bottom: #10265c; */
     }
 }
