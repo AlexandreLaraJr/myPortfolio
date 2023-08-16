@@ -3,11 +3,9 @@ export default function Home() {
     return (
         <section id="home">
             <div className="columnA">
-                <div className="wrapName">
-                    <h3>Desenvolvedor</h3>
-                    <h1>Alexandre</h1>
-                    <h1>Lara</h1>
-                </div>
+                <h3>Desenvolvedor</h3>
+                <h2>Alexandre Lara</h2>
+
                 <p>
                     Desenvolvedor web, apaixonado por tecnologia, música e
                     jogos.

@@ -14,6 +14,7 @@ html {
         url("assets/fonts/Satoshi-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    font-display: block;
 }
 
 :root {
@@ -190,9 +191,6 @@ header {
         gap: 10rem;
         width: 80%;
         bottom: 10rem;
-    }
-
-    #home .wrapName {
     }
 
     #home .columnA {
