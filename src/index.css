@@ -8,8 +8,16 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "satoshiFont";
+    src: local("satoshiFont"),
+        url("assets/fonts/Satoshi-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "satoshiFont";
     font-size: 62.5%;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
@@ -23,6 +31,10 @@ html {
     --font-color: hsl(39, 100%, 97%);
     color: var(--font-color);
 }
+
+/* ============== */
+/* font style */
+/* ============== */
 
 /* ============== */
 /* global styles */
@@ -218,7 +230,7 @@ header {
     }
 
     #about .columnB {
-        padding-bottom: 40rem;
+        padding-bottom: 20rem;
         /* padding-left: 50%; */
     }
 
@@ -242,7 +254,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10rem;
+        /* gap: 5rem; */
         width: 80%;
         bottom: 10rem;
     }
@@ -348,6 +360,7 @@ header {
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        margin-left: 1rem;
     }
 
     #contact .imageContact {

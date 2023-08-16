@@ -6,7 +6,7 @@ export default function About() {
             <div className="columnA">
                 <h2>Sobre</h2>
                 <p>
-                    Me chamo Alexandre Lara, sou formado em Analise e
+                    Me chamo Alexandre Lara, sou formado em Análise e
                     Desenvolvimento de Sistemas na Fatec Santos, desenvolvedor
                     web e apaixonado em tudo em que a arte de criar serviços Web
                     proporciona.
