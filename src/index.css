@@ -180,6 +180,9 @@ header {
         bottom: 10rem;
     }
 
+    #home .wrapName {
+    }
+
     #home .columnA {
         padding-top: 20;
     }
@@ -250,85 +253,64 @@ header {
         margin-bottom: 5rem;
     }
 
-    #projects .sliderStyles {
-        height: 100%;
-        position: relative;
-    }
-
-    #projects .card {
-        border: 2px solid #2c2c2c;
-        position: relative;
+    #projects .project {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 35rem;
-        border-radius: 8px;
-        background-color: var(--card-color);
+        justify-content: center;
     }
 
-    #projects .cardImage {
-        width: 95%;
-        border-radius: 10px;
-        margin-top: 1rem;
-        border: 2px solid #2c2c2c;
+    #projects .projectExibition {
+        display: flex;
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 5rem;
     }
 
-    #projects .card :nth-child(2) {
-        /* border: 2px solid red; */
-        align-items: left;
+    #projects .mobileExibition {
+        position: relative;
+        aspect-ratio: auto;
+        padding-right: 0;
+        align-self: flex-end;
+        width: 30%;
     }
+
+    #projects .webExibition {
+        position: absolute;
+        z-index: 0;
+        aspect-ratio: auto;
+        width: 100%;
+    }
+
+    #projects .projectAbout {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+
     #projects .pagesURL {
         /* border: 2px solid red; */
-        width: 70%;
+
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 5rem;
+        gap: 5rem;
+        justify-content: space-around;
     }
 
-    #projects .githubImage {
-        aspect-ratio: auto;
-        width: 5rem;
-    }
-    #projects .websiteImage {
-        aspect-ratio: auto;
-        width: 5.5rem;
-    }
-
-    /* #projects .slideStyles {
-        width: 100%;
-        height: 100%;
+    #projects a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-color);
         border-radius: 10px;
-        background-position: center;
-        background-size: cover;
-        background-image: url(${slides[currentIndex].url});
-    } */
-
-    /* #projects .leftArrowStyles {
-        position: "absolute";
-        top: "50%";
-        transform: "translate(0, -50%)";
-        left: "32px";
-        font-size: "45px";
-        color: "#fff";
-        z-index: 1;
-        cursor: "pointer";
+        width: 12rem;
+        height: 6rem;
+        color: var(--font-color);
     }
-
-    #projects .rightArrowStyles {
-        position: "absolute";
-        top: "50%";
-        transform: "translate(0, -50%)";
-        right: "32px";
-        font-size: "45px";
-        color: "#fff";
-        z-index: 1;
-        cursor: "pointer";
-    } */
-
-    /* #projects .columnB {
-        padding-bottom: ;
-    } */
+    #projects a img {
+        aspect-ratio: auto;
+        width: 4rem;
+    }
 
     /* =================
     contatos 
