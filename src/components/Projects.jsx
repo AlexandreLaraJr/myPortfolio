@@ -20,6 +20,12 @@ export default function Projects() {
                         "Projeto referente a um de meus hobbies favoritos, café!"
                     }
                 />
+                <ProjectPage
+                    mobileExibition={workingOnMobile}
+                    webExibition={workingOnWeb}
+                    projectName={"Em Prototipagem!"}
+                    projectDescription={"No momento, algo secreto..."}
+                />
             </div>
         </section>
     );
