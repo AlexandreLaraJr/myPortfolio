@@ -157,10 +157,6 @@ header {
     .blob {
         position: fixed;
         z-index: 0;
-        /* top: 10rem;
-        right: -10rem;
-        aspect-ratio: auto;
-        height: 85%; */
         margin: 5rem 0;
         width: 100%;
         height: 100%;
@@ -181,7 +177,6 @@ header {
     }
 
     #home {
-        /* margin-top: 10rem; */
         position: relative;
         padding-top: 20rem;
         display: flex;
@@ -229,14 +224,12 @@ header {
 
     #about .columnB {
         padding-bottom: 20rem;
-        /* padding-left: 50%; */
     }
 
     #about .columnB img {
         aspect-ratio: auto;
         width: 300px;
         border-radius: 16px;
-        /* box-shadow: 17px 17px 0px #a8a8a8; */
     }
 
     /* =================
@@ -244,15 +237,11 @@ header {
     ================= */
 
     #projects {
-        /* border: 2px solid red; */
-        /* margin-top: 10rem; */
         position: relative;
         padding-top: 5rem;
-        /* display: flex; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* gap: 5rem; */
         width: 80%;
         bottom: 10rem;
     }
@@ -273,7 +262,8 @@ header {
     #projects .projectExibition {
         display: flex;
         width: 100%;
-        height: 20rem;
+        /* height: 20rem; */
+        height: 20%;
         margin-bottom: 5rem;
     }
 
@@ -282,6 +272,7 @@ header {
         aspect-ratio: auto;
         padding-right: 0;
         align-self: flex-end;
+        margin-top: 2rem;
         width: 30%;
     }
 
@@ -296,15 +287,14 @@ header {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        align-self: flex-start;
         margin-bottom: 5rem;
     }
 
     #projects .pagesURL {
-        /* border: 2px solid red; */
-
         display: flex;
-        gap: 5rem;
-        justify-content: space-around;
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     #projects a {
@@ -328,7 +318,7 @@ header {
 
     #contact {
         position: absolute;
-        top: 30rem;
+        top: 20rem;
         margin-top: 250rem;
         display: flex;
         flex-direction: column;
@@ -337,7 +327,6 @@ header {
     }
 
     #contact .columnA {
-        /* position: absolute; */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -373,27 +362,110 @@ header {
     }
 
     #contact .columnB {
-        /* padding-left: 12rem; */
-        /* position: absolute; */
         margin-top: -10rem;
         z-index: 10;
     }
-
-    /* #contact p {
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    #contact .contacts:hover > :not(:hover) {
-        opacity: 0.6;
-        transform: scale(0.99);
-    } */
 
     #contact .columnB img {
         aspect-ratio: auto;
         width: 100%;
         margin-bottom: -5rem;
-        /* padding-bottom: -2rem; */
-        /* border-bottom: #10265c; */
     }
 }
+
+/* @media (min-width: 1024px) {
+    header {
+        position: fixed;
+        height: 10rem;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        padding-bottom: 10;
+        border: 10;
+
+        bottom: 10rem;
+    }
+
+    header a {
+        margin-left: 2rem;
+    }
+
+    header a,
+    .logo {
+        aspect-ratio: auto;
+        width: 10rem;
+    }
+
+    header .burgerMenu {
+        display: none;
+    }
+
+    .blob {
+        position: fixed;
+        z-index: 0;
+        margin: -3rem 25rem;
+        aspect-ratio: auto;
+        width: 150rem;
+        object-fit: cover;
+        object-position: 50% 10%;
+    }
+
+    .pageContent {
+        width: 100%;
+        font-size: 2rem;
+        position: relative;
+        padding-top: 10rem;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home {
+        position: relative;
+        padding-top: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        width: 80%;
+        bottom: 10rem;
+    }
+
+    #home .columnB img {
+        aspect-ratio: auto;
+        width: 20rem;
+    }
+
+    #about {
+        position: relative;
+        padding-top: 15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        width: 80%;
+    }
+
+    #about p {
+        width: 100%;
+        text-align: start;
+    }
+
+    #about .columnB {
+        padding-bottom: 20rem;
+    }
+
+    #about .columnB img {
+        aspect-ratio: auto;
+        width: 300px;
+        border-radius: 16px;
+    }
+} */
