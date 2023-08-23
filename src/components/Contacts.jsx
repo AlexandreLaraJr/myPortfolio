@@ -3,15 +3,34 @@ import githubLogo from "../assets/github.svg";
 import whatsappLogo from "../assets/whatsapp.svg";
 import emailLogo from "../assets/email.svg";
 import callMe from "../assets/callMe.png";
+import copyEmail from "../assets/copyEmail.svg";
 import ContactsSocialLink from "./ContactsSocialLink";
+import { useState, useRef } from "react";
 
 export default function Contacts() {
+    const [emailCopied, setEmailCopied] = useState(false);
+    const emailRef = useRef(null);
+
+    const handleEmailCopy = () => {
+        const email = "ale_larajr@hotmail.com";
+        // const email = emailRef.current.textContent;
+        navigator.clipboard.writeText(email);
+        // emailRef.current.classList.add("copied");
+
+        setTimeout(() => {
+            setEmailCopied((current) => !current);
+
+            // emailRef.current.classList.remove("copied");
+        }, 2000);
+        setEmailCopied((current) => !current);
+    };
+
     return (
         <section id="contact">
             <div className="columnA">
                 <h2>Contato</h2>
                 <div className="contacts">
-                    <div className="socialLink">
+                    <div className="socialLink" onClick={handleEmailCopy}>
                         <img
                             id="emailLogo"
                             className="imageContact"
@@ -21,6 +40,13 @@ export default function Contacts() {
                         <p id="email" title="Copiar E-mail.">
                             E-mail: ale_larajr@hotmail.com
                         </p>
+                        {/* <button className="batata"> */}
+                        <img
+                            className="copyEmail"
+                            src={copyEmail}
+                            alt="copiar email"
+                        />
+                        {/* </button> */}
                     </div>
 
                     <ContactsSocialLink
@@ -49,6 +75,10 @@ export default function Contacts() {
                     />
                 </div>
             </div>
+            <p className={emailCopied ? "copied" : "notCopied"}>
+                Email copiado!
+            </p>
+
             <div className="columnB">
                 <img
                     src={callMe}

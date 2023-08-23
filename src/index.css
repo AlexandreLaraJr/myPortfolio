@@ -256,12 +256,12 @@ header .burgerMenu {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10rem;
 }
 
 #projects .projectExibition {
     display: flex;
     width: 100%;
-    /* height: 20rem; */
     height: 20%;
     margin-bottom: 5rem;
 }
@@ -282,6 +282,10 @@ header .burgerMenu {
     width: 100%;
 }
 
+#projects .description {
+    width: 100%;
+}
+
 #projects .projectAbout {
     display: flex;
     flex-direction: column;
@@ -293,7 +297,7 @@ header .burgerMenu {
 #projects .pagesURL {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #projects a {
@@ -302,13 +306,13 @@ header .burgerMenu {
     align-items: center;
     background-color: var(--card-color);
     border-radius: 10px;
-    width: 12rem;
-    height: 6rem;
+    width: 10rem;
+    height: 5rem;
     color: var(--font-color);
 }
 #projects a img {
     aspect-ratio: auto;
-    width: 4rem;
+    width: 3rem;
 }
 
 /* =================
@@ -316,9 +320,7 @@ header .burgerMenu {
     ================= */
 
 #contact {
-    position: absolute;
-    top: 20rem;
-    margin-top: 250rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 15rem;
@@ -347,6 +349,31 @@ header .burgerMenu {
     flex-direction: row;
     gap: 2rem;
     margin-left: 1rem;
+}
+
+#contact .copyEmail {
+    aspect-ratio: auto;
+    width: 4rem;
+    margin-left: -2rem;
+    margin-bottom: -1.5rem;
+    transition: 0.2ms ease-in-out;
+}
+
+#contact .notCopied {
+    display: none;
+}
+
+#contact .copied {
+    position: absolute;
+    top: 10rem;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-color);
+    width: 15rem;
+    height: 4rem;
+    border-radius: 5px;
 }
 
 #contact .imageContact {
@@ -446,7 +473,7 @@ header .burgerMenu {
         z-index: 0;
         margin: 3rem;
         aspect-ratio: auto;
-        width: 100%;
+        width: 110%;
         object-fit: cover;
     }
 
@@ -512,7 +539,7 @@ header .burgerMenu {
         padding-top: 7rem;
         width: 80%;
         bottom: 10rem;
-        margin-bottom: 20rem;
+        margin-bottom: 22rem;
     }
 
     #projects .columnB {
@@ -524,26 +551,30 @@ header .burgerMenu {
 
     #projects .project {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        height: 40rem;
+        margin-bottom: 0;
     }
 
     #projects .projectExibition {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 20%;
-        margin-bottom: 5rem;
+        aspect-ratio: auto;
+        /* height: 50%; */
+        width: 50%;
+        margin-bottom: 0rem;
     }
 
     #projects .mobileExibition {
         position: relative;
         aspect-ratio: auto;
         /* align-self: flex-start; */
-        margin-top: 4rem;
-        margin-right: 50%;
-        width: 17%;
+        margin-bottom: -25%;
+        margin-right: 60%;
+        width: 30%;
     }
 
     #projects .webExibition {
@@ -551,14 +582,18 @@ header .burgerMenu {
         z-index: 0;
         aspect-ratio: auto;
         margin: 0 auto;
-        width: 65%;
+        width: 50%;
+    }
+
+    #projects .description {
+        width: 60%;
     }
 
     #projects .projectAbout {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        align-self: flex-start;
+        align-self: center;
         margin-bottom: 5rem;
     }
 
@@ -575,8 +610,8 @@ header .burgerMenu {
         background-color: hsla(0, 0%, 0%, 0);
         border: 3px solid var(--card-color);
         border-radius: 10px;
-        width: 12rem;
-        height: 6rem;
+        width: 10rem;
+        height: 5rem;
         color: var(--font-color);
 
         transition: 0.3s ease-in-out;
@@ -588,7 +623,7 @@ header .burgerMenu {
 
     #projects a img {
         aspect-ratio: auto;
-        width: 4rem;
+        width: 3rem;
     }
 
     #contact {
@@ -596,7 +631,12 @@ header .burgerMenu {
         flex-direction: row;
         gap: 20rem;
         width: 80%;
-        height: 50rem;
+        height: 40rem;
+        border: 2px solid red;
+    }
+
+    #contact .columnA {
+        margin-bottom: 20rem;
     }
 
     #contact .contacts {
