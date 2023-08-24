@@ -355,8 +355,12 @@ header .burgerMenu {
     aspect-ratio: auto;
     width: 4rem;
     margin-left: -2rem;
+    margin-right: 30%;
     margin-bottom: -1.5rem;
-    transition: 0.2ms ease-in-out;
+}
+
+#contact .columnA img {
+    cursor: pointer;
 }
 
 #contact .notCopied {
@@ -428,6 +432,10 @@ header .burgerMenu {
         display: initial;
         flex-direction: initial;
         gap: initial;
+    }
+
+    #contact .copied {
+        top: initial;
     }
 
     /* =================
@@ -555,6 +563,7 @@ header .burgerMenu {
         align-items: center;
         justify-content: center;
         height: 40rem;
+        gap: 5rem;
         margin-bottom: 0;
     }
 
@@ -572,9 +581,9 @@ header .burgerMenu {
         position: relative;
         aspect-ratio: auto;
         /* align-self: flex-start; */
-        margin-bottom: -25%;
-        margin-right: 60%;
-        width: 30%;
+        margin-bottom: -12rem;
+        margin-right: 30rem;
+        width: 12rem;
     }
 
     #projects .webExibition {
@@ -582,7 +591,7 @@ header .burgerMenu {
         z-index: 0;
         aspect-ratio: auto;
         margin: 0 auto;
-        width: 50%;
+        width: 50rem;
     }
 
     #projects .description {
@@ -601,6 +610,7 @@ header .burgerMenu {
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+        max-width: 40rem;
     }
 
     #projects a {
@@ -627,16 +637,34 @@ header .burgerMenu {
     }
 
     #contact {
+        margin-left: 20%;
         display: flex;
         flex-direction: row;
         gap: 20rem;
         width: 80%;
         height: 40rem;
-        border: 2px solid red;
     }
 
     #contact .columnA {
         margin-bottom: 20rem;
+    }
+
+    #contact .notCopied {
+        display: none;
+    }
+
+    #contact .copied {
+        position: absolute;
+        bottom: 30rem;
+        left: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--card-color);
+        width: 15rem;
+        height: 4rem;
+        margin-left: 6rem;
+        border-radius: 5px;
     }
 
     #contact .contacts {

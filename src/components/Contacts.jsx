@@ -40,13 +40,11 @@ export default function Contacts() {
                         <p id="email" title="Copiar E-mail.">
                             E-mail: ale_larajr@hotmail.com
                         </p>
-                        {/* <button className="batata"> */}
                         <img
                             className="copyEmail"
                             src={copyEmail}
                             alt="copiar email"
                         />
-                        {/* </button> */}
                     </div>
 
                     <ContactsSocialLink
