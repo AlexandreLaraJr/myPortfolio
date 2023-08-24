@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import githubLogo from "../assets/github.svg";
-import arrowGoTo from "../assets/arrowGoTo.svg";
 
 ProjectSlider.propTypes = {
     webExibition: PropTypes.string,
