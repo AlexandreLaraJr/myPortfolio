@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/* ============== */
+/* font style */
+/* ============== */
+
 @font-face {
     font-family: "satoshiFont";
     src: local("satoshiFont"),
@@ -16,6 +20,10 @@ html {
     font-style: normal;
     font-display: block;
 }
+
+/* ============== */
+/* global styles */
+/* ============== */
 
 :root {
     font-family: "satoshiFont";
@@ -32,14 +40,6 @@ html {
     --font-color: hsl(39, 100%, 97%);
     color: var(--font-color);
 }
-
-/* ============== */
-/* font style */
-/* ============== */
-
-/* ============== */
-/* global styles */
-/* ============== */
 
 header {
     background-color: var(--header-color);

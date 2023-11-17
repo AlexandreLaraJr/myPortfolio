@@ -7,22 +7,22 @@ export default function Projects() {
         <section id="projects">
             <div className="columnA">
                 <h2>Projetos</h2>
-                <p>Projetos de clientes e projetos próprios</p>
+                <p>Projetos próprios e de clientes:</p>
             </div>
             <div className="columnB">
                 <ProjectPage
                     mobileExibition={workingOnMobile}
                     webExibition={workingOnWeb}
                     projectName={"Em Desenvolvimento!"}
-                    projectDescription={
-                        "Projeto referente a um de meus hobbies favoritos, café!"
-                    }
+                    projectDescription={"No momento, algo secreto..."}
                 />
                 <ProjectPage
                     mobileExibition={workingOnMobile}
                     webExibition={workingOnWeb}
                     projectName={"Em Prototipagem!"}
-                    projectDescription={"No momento, algo secreto..."}
+                    projectDescription={
+                        "Projeto referente a um de meus hobbies favoritos, café!"
+                    }
                 />
             </div>
         </section>
