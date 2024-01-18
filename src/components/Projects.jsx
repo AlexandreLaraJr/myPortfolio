@@ -1,6 +1,8 @@
 import ProjectPage from "./ProjectPage";
 import workingOnMobile from "../assets/workingOnMobile.png";
 import workingOnWeb from "../assets/workingOnWeb.png";
+import mobileCodeSphere from "../assets/mobileCodeSphere.png";
+import webCodeSphere from "../assets/webCodeSphere.png";
 
 export default function Projects() {
     return (
@@ -14,14 +16,20 @@ export default function Projects() {
                     mobileExibition={workingOnMobile}
                     webExibition={workingOnWeb}
                     projectName={"Em Desenvolvimento!"}
-                    projectDescription={"No momento, algo secreto..."}
+                    projectDescription={
+                        "Webapp de criação de Decks do jogo de cartas Yu-gi-oh."
+                    }
                 />
                 <ProjectPage
-                    mobileExibition={workingOnMobile}
-                    webExibition={workingOnWeb}
-                    projectName={"Em Prototipagem!"}
+                    mobileExibition={mobileCodeSphere}
+                    webExibition={webCodeSphere}
+                    projectName={"CodeSphere"}
                     projectDescription={
-                        "Projeto referente a um de meus hobbies favoritos, café!"
+                        "Um site de uma agência fictícia focada em publicidade, design e desenvolvimento de sites."
+                    }
+                    projectUrl={"https://agencia-codesphere.netlify.app"}
+                    projectGitHubUrl={
+                        "https://github.com/AlexandreLaraJr/codeSphere"
                     }
                 />
             </div>

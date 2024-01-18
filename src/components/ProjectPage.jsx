@@ -6,6 +6,8 @@ ProjectSlider.propTypes = {
     mobileExibition: PropTypes.string,
     projectName: PropTypes.string,
     projectDescription: PropTypes.string,
+    projectUrl: PropTypes.string,
+    projectGitHubUrl: PropTypes.string,
 };
 
 export default function ProjectSlider({
@@ -13,6 +15,8 @@ export default function ProjectSlider({
     mobileExibition,
     projectName,
     projectDescription,
+    projectUrl,
+    projectGitHubUrl,
 }) {
     return (
         <div className="project">
@@ -26,10 +30,18 @@ export default function ProjectSlider({
                     <p>{projectDescription}</p>
                 </div>
                 <div className="pagesURL">
-                    <a href="" className="githubImage">
+                    <a
+                        target="_blank"
+                        href={projectGitHubUrl}
+                        className="githubImage"
+                    >
                         <img className="githubImage" src={githubLogo} alt="" />
                     </a>
-                    <a href="" className="websiteShow">
+                    <a
+                        target="_blank"
+                        href={projectUrl}
+                        className="websiteShow"
+                    >
                         Visite!
                     </a>
                 </div>
