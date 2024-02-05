@@ -15,9 +15,13 @@ export default function Projects() {
                 <ProjectPage
                     mobileExibition={workingOnMobile}
                     webExibition={workingOnWeb}
-                    projectName={"Em Desenvolvimento!"}
+                    projectName={"Yu-Gi-Oh BYD, em Desenvolvimento!"}
                     projectDescription={
-                        "Webapp de criação de Decks do jogo de cartas Yu-gi-oh."
+                        "WebApp de criação de Decks do jogo de cartas Yu-gi-oh.\nCom autenticação Firebase e banco de dados Firestore para ter a segurança de seus Decks e sua conta!"
+                    }
+                    projectUrl={"https://yugioh-byd.netlify.app/"}
+                    projectGitHubUrl={
+                        "https://github.com/AlexandreLaraJr/yu-gi-ohBYD"
                     }
                 />
                 <ProjectPage
